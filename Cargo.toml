@@ -1,0 +1,9 @@
+[package]
+name = "cyper-test"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+compio =  {  git = "https://github.com/compio-rs/compio.git", rev = "fe4243f0b6811ebc325afd081c9b087b4d9817be", features = ["runtime", "macros", "io-uring", "time", "rustls"] }
+cyper = { version = "0.4.0", features = ["rustls"] }
+rustls = { version = "0.23", features = ["aws-lc-rs"] }
